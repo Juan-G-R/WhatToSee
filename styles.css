@@ -1,0 +1,63 @@
+/*
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*/
+
+.navBar {
+    list-style-type: none;
+    margin: 0;
+    padding-right: 50px;
+}
+
+.navBarItem {
+    display: inline;
+    padding-left: 10px;
+}
+
+
+
+
+
+i{
+    color: white;
+    font-size: 3rem;
+    pointer-events: auto;
+    cursor: pointer;
+
+}
+
+i:hover{
+    color: purple;
+}
+
+.slider{
+    position: absolute;
+    left: 1%;
+    top: 20%;
+    width: 97%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slider-inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200%;
+    width: 120%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    pointer-events: none;
+    transition: 0s ease-in;
+}
+
+.slider-img{
+    height: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 3rem;
+}
