@@ -1,53 +1,64 @@
-let slider = document.querySelector('.slider');
-let innerSlider = document.querySelector('.slider-inner');
+const slider = document.querySelectorAll('.slider');
+const slider2 = document.querySelector('.slider');
+
+const innerSlider = document.querySelectorAll('.slider-inner');
 
 let pressed = false;
 let startx;
 let x;
 
-slider.addEventListener('mousedown', (e)=>{
-    pressed= true;
-    startx = e.offsetX - innerSlider.offsetLeft;
-    slider.style.cursor = 'grabbing'
-});
-
-slider.addEventListener('mouseenter', ()=>{
-    slider.style.cursor = 'grab'
-});
-
-//slider.addEventListener('mouseLeave', ()=>{
-//    slider.style.cursor = 'default'
-//})
+console.log(slider[0]);
+console.log(slider2);
 
 
-slider.addEventListener('mouseup', ()=>{
-    slider.style.cursor = 'grab'
-});
+for (i=0; i <= slider.length-1; i++){
 
-window.addEventListener('mouseup', ()=>{
-    pressed = false;
-});
-
-slider.addEventListener('mousemove', (e)=>{
-    if(!pressed) return;
-    e.preventDefault();
-
-    x = e.offsetX
-
-    innerSlider.style.left = `${x - startx}px`; 
-
-    checkBorder()
-})
-
-function checkBorder(){
-    let outer = slider.getBoundingClientRect();
-    let inner = innerSlider.getBoundingClientRect();
-
-    if(parseInt(innerSlider.style.left) > 0){
-        innerSlider.style.left = '0px';
-    }else if(inner.right < outer.right){
-        innerSlider.style.left = `-${inner.width - outer.width}px`
+    slider[i].addEventListener('mousedown', (e)=>{
+        pressed= true;
+        startx = e.offsetX - innerSlider[i].offsetLeft;
+        slider[i].style.cursor = 'grabbing'
+    });
+    
+    slider[i].addEventListener('mouseenter', ()=>{
+        slider[i].style.cursor = 'grab'
+    });
+    
+    //slider.addEventListener('mouseLeave', ()=>{
+    //    slider.style.cursor = 'default'
+    //})
+    
+    
+    slider[i].addEventListener('mouseup', ()=>{
+        slider[i].style.cursor = 'grab'
+    });
+    
+    window.addEventListener('mouseup', ()=>{
+        pressed = false;
+    });
+    
+    slider[i].addEventListener('mousemove', (e)=>{
+        if(!pressed) return;
+        e.preventDefault();
+    
+        x = e.offsetX
+    
+        innerSlider[i].style.left = `${x - startx}px`; 
+    
+        checkBorder()
+    })
+    
+    function checkBorder(){
+        let outer = slider[i].getBoundingClientRect();
+        let inner = innerSlider[i].getBoundingClientRect();
+    
+        if(parseInt(innerSlider[i].style.left) > 0){
+            innerSlider[i].style.left = '0px';
+        }else if(inner.right < outer.right){
+            innerSlider[i].style.left = `-${inner.width - outer.width}px`
+        }
     }
+    
+    checkBorder()
 }
 
-checkBorder()
+

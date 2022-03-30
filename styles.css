@@ -34,9 +34,8 @@ i:hover{
 }
 
 .slider{
-    position: absolute;
+    position: relative;
     left: 1%;
-    top: 20%;
     width: 97%;
     height: 300px;
     overflow: hidden;
@@ -59,5 +58,6 @@ i:hover{
     height: 100%;
     background-color: black;
     text-align: center;
-    padding: 3rem;
+    padding: 0px;
+   /* padding: 3rem; */
 }
