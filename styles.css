@@ -86,7 +86,8 @@ input {
     height: 100%;
     width: 142%;
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    /*grid-template-columns: repeat(10, 1fr);*/
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
     gap: 8px;
     pointer-events: none;
     transition: 0s ease-in;
