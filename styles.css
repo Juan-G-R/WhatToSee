@@ -27,6 +27,10 @@ body {
     padding-left: 10px;
 }
 
+.mainTitle{
+    text-shadow: -2px 4px 0 grey;
+}
+
 /*--------------------- Log In ------------------------------*/
 
 #login{
@@ -83,14 +87,14 @@ input {
     width: 142%;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    gap: 5px;
+    gap: 8px;
     pointer-events: none;
     transition: 0s ease-in;
 }
 
 .slider-img{
     height: 100%;
-    background-color: purple;
+    background-color: black; /*Poner purple*/
     text-align: center;
     padding: 0px;
    /* padding: 3rem; */
