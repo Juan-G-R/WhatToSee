@@ -11,7 +11,7 @@ console.log(slider[0]);
 console.log(slider2);
 
 
-for (i=0; i <= slider.length-1; i++){
+for (let i=0; i <= slider.length-1; i++){
 
     slider[i].addEventListener('mousedown', (e)=>{
         pressed= true;
