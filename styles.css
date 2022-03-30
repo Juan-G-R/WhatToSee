@@ -11,6 +11,8 @@ body {
     background-color:black;
 }
 
+
+
 /*--------------------- NAV BAR ------------------------------*/
 
 .navBar {
@@ -30,6 +32,7 @@ body {
 .mainTitle{
     text-shadow: -2px 4px 0 grey;
 }
+
 
 /*--------------------- Log In ------------------------------*/
 
@@ -86,16 +89,16 @@ input {
     height: 100%;
     width: 142%;
     display: grid;
-    /*grid-template-columns: repeat(10, 1fr);*/
-    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    grid-template-columns: repeat(10, 1fr);
+    /*grid-template-columns: repeat(auto-fit, minmax(100px,1fr));*/
     gap: 8px;
     pointer-events: none;
     transition: 0s ease-in;
 }
 
 .slider-img{
-    height: 100%;
-    background-color: black; /*Poner purple*/
+    height: auto;
+    background-color: purple; /*Poner purple*/
     text-align: center;
     padding: 0px;
    /* padding: 3rem; */
