@@ -1,5 +1,4 @@
 const slider = document.querySelectorAll('.slider');
-const slider2 = document.querySelector('.slider');
 
 const innerSlider = document.querySelectorAll('.slider-inner');
 
@@ -8,7 +7,6 @@ let startx;
 let x;
 
 console.log(slider[0]);
-console.log(slider2);
 
 
 for (let i=0; i <= slider.length-1; i++){

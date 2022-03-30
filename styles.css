@@ -6,10 +6,20 @@
 }
 */
 
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial;
+    background-color:black;
+}
+
+/*--------------------- NAV BAR ------------------------------*/
+
 .navBar {
     list-style-type: none;
     margin: 0;
-    padding-right: 50px;
+    padding-right: auto;
+    float: right;
+    margin-right: 32px;
+    margin-top: 10px;
 }
 
 .navBarItem {
@@ -17,21 +27,45 @@
     padding-left: 10px;
 }
 
+/*--------------------- Log In ------------------------------*/
 
-
-
-
-i{
-    color: white;
-    font-size: 3rem;
-    pointer-events: auto;
-    cursor: pointer;
-
+#login{
+    background: white; 
+    height: 500px; 
+    width:400px;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    /*margin-top: 100px;*/
+    margin-bottom: 25px;
+    border-radius: 0.5em; /*antes 5% */
+    border: 1px solid white;
+    box-shadow : 0 0 15px 0 #444; 
+}
+    
+input {
+    width: 85%;
+    padding: 1px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;  
 }
 
-i:hover{
-    color: purple;
+#butLog{
+    margin: 0;
+    margin-top: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    background: linear-gradient(to bottom right, #5865b9, #3993d8);
+    box-shadow : 0 0 15px 0 #444;   
+    margin-left: 13%;
+    height: 75px;
+    width: 300px;
+    border-radius: 0.5em; /*antes 5% */
+    border: 0px solid red;
 }
+
+/*--------------------- Slider ------------------------------*/
+
 
 .slider{
     position: relative;
@@ -45,8 +79,8 @@ i:hover{
     position: absolute;
     top: 0;
     left: 0;
-    height: 200%;
-    width: 120%;
+    height: 100%;
+    width: 142%;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 5px;
@@ -56,7 +90,7 @@ i:hover{
 
 .slider-img{
     height: 100%;
-    background-color: black;
+    background-color: purple;
     text-align: center;
     padding: 0px;
    /* padding: 3rem; */
