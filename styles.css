@@ -12,7 +12,6 @@ body {
 }
 
 
-
 /*--------------------- NAV BAR ------------------------------*/
 
 .navBar {
@@ -35,6 +34,28 @@ body {
 
 
 /*--------------------- Log In ------------------------------*/
+
+#loginBack{
+    overflow: hidden;
+}
+
+#loginBack::after {
+    content: "";
+    background: url(Images/back.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
+    height: auto;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
+    transform: rotate(20deg) scale(2) rotateY(200deg);
+}
 
 #login{
     background: white; 
