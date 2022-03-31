@@ -96,6 +96,27 @@ input {
     border: 0px solid red;
 }
 
+/*--------------------- film ------------------------------*/
+
+.infoFilmImg{
+    width: 100%; 
+    border-radius: 0.5em; /*antes 5% */
+    border: 1px solid black;
+    box-shadow : 0 0 15px 0 white; 
+}
+
+.boxinfofilm{
+    float:right; 
+    width:600px; 
+    height:500px;
+    background-color:white;
+    margin-right: 20%;
+    display: inline;
+    border-radius: 0.5em; /*antes 5% */
+    border: 1px solid white;
+    box-shadow : 0 0 15px 0 #444; 
+}
+
 /*--------------------- Slider ------------------------------*/
 
 
