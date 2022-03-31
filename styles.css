@@ -117,10 +117,16 @@ input {
     transition: 0s ease-in;
 }
 
-.slider-img{
+.slider-img-box{
     height: auto;
     background-color: black; /*Poner purple*/
     text-align: center;
     padding: 0px;
-   /* padding: 3rem; */
+    border-radius: 50%;
+    /* padding: 3rem; */
+}
+
+.slider-img{
+    border-radius: 1.5%;
+    width: 100%;
 }
