@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,11 +7,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
+
+    <style>
+        /* Movil */
+        @media (max-width: 600px) { 
+            .esconder-movil {
+                display: none;
+            }
+        }
+        /* Desktop */
+        @media (min-width: 600px) { 
+            .esconder-desktop {
+                display: none;
+            }
+        }
+    </style>
+    
     <title>Document</title>
   </head>
 
 
-  <body>
+  <body class="">
 
     <header style="background-color: black; height: 30px; margin-bottom: 40px;">
         <div style="padding-top:5px">
@@ -20,8 +39,15 @@
             <p style="display: inline;font-size:15px;margin-left: 1%;color:grey;">My List</p>
             <ul class="navBar">
                 <i  class="material-icons" style="color: white;">search</i>
-                <li class="navBarItem"><a href="singUp.html">Sing Up</a></li>
-                <li class="navBarItem"><a href="login.html">Log In</a></li>
+                <?php 
+                    if(isset($_SESSION['logged'])) { ?>
+                        <li class="navBarItem" style="color: rgba(255,255,255,1);"><?php echo $_SESSION['username']; ?></li>
+                        <li class="navBarItem"><a href="close.php">Log out</a></li>
+                    <?php } else { ?>
+                        <li class="navBarItem"><a href="signUp.html">Sign Up</a></li>
+                        <li class="navBarItem"><a href="login.html">Log In</a></li>
+                    <?php }
+                ?>
             </ul> 
         </div>
     </header>
