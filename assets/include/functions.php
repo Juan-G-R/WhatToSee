@@ -132,7 +132,6 @@
 
             return $imgFilms[$f];
 
-            echo("hola");
 
         }elseif($type == "TV"){
 
