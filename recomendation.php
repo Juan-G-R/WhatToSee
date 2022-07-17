@@ -79,11 +79,7 @@ require_once('assets/include/functions.php');
 
         </div>
 
-
-
-
     </div>
-
 
   </body>
 

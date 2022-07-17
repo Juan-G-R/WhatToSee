@@ -11,6 +11,8 @@ let x;
 
 for (let i=0; i <= slider.length-1; i++){
 
+    console.log(x);
+
     slider[i].addEventListener('mousedown', (e)=>{
         pressed= true;
         startx = e.offsetX - innerSlider[i].offsetLeft;
