@@ -48,6 +48,7 @@ require_once('assets/include/functions.php');
                 <?php 
                     if(isset($_SESSION['logged'])) { ?>
                         <li class="navBarItem" > <a style="color: rgba(255,255,255,1);" href=".php"><?php echo $_SESSION['username']; ?></a> </li>
+                        <li class="navBarItem" style="color: rgba(255,255,255,1);"><?php echo $_SESSION['username']; ?></li>
                         <li class="navBarItem"><a href="close.php">Log out</a></li>
                     <?php } else { ?>
                         <li class="navBarItem"><a href="signUp.html">Sign Up</a></li>
@@ -106,6 +107,43 @@ require_once('assets/include/functions.php');
         
                     <div class="slider-img-box">
                         <img loading="lazy" class="slider-img" src="<?php echo getImgUrlFiml("FILM");?>">
+                        <img class="slider-img"  src="<?php echo getImgUrlFiml("FILM");?>">
+                    </div>
+        
+                    <div class="slider-img-box">
+                        <img class="slider-img"  src="<?php echo getImgUrlFiml("FILM");?>">
+                    </div>
+        
+                    <div class="slider-img-box">
+                        <img class="slider-img" src="<?php echo getImgUrlFiml("FILM");?>">
+                    </div>
+        
+                    <div class="slider-img-box">
+                        <img class="slider-img" src="<?php echo getImgUrlFiml("FILM");?>">
+                    </div>
+        
+                    <div class="slider-img-box">
+                        <img class="slider-img" src="<?php echo getImgUrlFiml("FILM");?>">
+                    </div>
+                    
+                    <div class="slider-img-box">
+                        <img class="slider-img" src="<?php echo getImgUrlFiml("FILM");?>">
+                    </div>
+        
+                    <div class="slider-img-box">
+                        <img class="slider-img" src="<?php echo getImgUrlFiml("FILM");?>">
+                    </div>
+        
+                    <div class="slider-img-box">
+                        <img class="slider-img" src="<?php echo getImgUrlFiml("FILM");?>">
+                    </div>
+        
+                    <div class="slider-img-box">
+                        <img class="slider-img" src="<?php echo getImgUrlFiml("FILM");?>">
+                    </div>
+        
+                    <div class="slider-img-box">
+                        <img class="slider-img" src="<?php echo getImgUrlFiml("FILM");?>">
                     </div>
 
                     
@@ -160,6 +198,43 @@ require_once('assets/include/functions.php');
         
                     <div class="slider-img-box">
                         <img loading=lazy class="slider-img" src="<?php echo getImgUrlFiml("TV");?>">
+                        <img class="slider-img" src="<?php echo getImgUrlFiml("TV");?>">
+                    </div>
+        
+                    <div class="slider-img-box">
+                        <img class="slider-img" src="<?php echo getImgUrlFiml("TV");?>">
+                    </div>
+        
+                    <div class="slider-img-box">
+                        <img class="slider-img" src="<?php echo getImgUrlFiml("TV");?>">
+                    </div>
+        
+                    <div class="slider-img-box">
+                        <img class="slider-img" src="<?php echo getImgUrlFiml("TV");?>">
+                    </div>
+        
+                    <div class="slider-img-box">
+                        <img class="slider-img" src="<?php echo getImgUrlFiml("TV");?>">
+                    </div>
+                    
+                    <div class="slider-img-box">
+                        <img class="slider-img" src="<?php echo getImgUrlFiml("TV");?>">
+                    </div>
+        
+                    <div class="slider-img-box">
+                        <img class="slider-img" src="<?php echo getImgUrlFiml("TV");?>">
+                    </div>
+        
+                    <div class="slider-img-box">
+                        <img class="slider-img" src="<?php echo getImgUrlFiml("TV");?>">
+                    </div>
+        
+                    <div class="slider-img-box">
+                        <img class="slider-img" src="<?php echo getImgUrlFiml("TV");?>">
+                    </div>
+        
+                    <div class="slider-img-box">
+                        <img class="slider-img" src="<?php echo getImgUrlFiml("TV");?>">
                     </div>
         
                 </div>
