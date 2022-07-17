@@ -78,8 +78,6 @@
     $t = -1;
 
     function getImgUrlFiml($type){
-		
-		//Se pueden pedir hasta 20 pelis ya que el json solo da esas
         
         global $f;
         global $t;
@@ -105,6 +103,7 @@
 
                     foreach ($data["results"][$i] as $columnName => $columnData) {
                         if($columnName == "poster_path") {
+                            //echo $columnData . '<br />';
                             if($type == "FILM"){
                                 $imgFilms[] = $urlImg . $columnData;
                             }elseif($type == "TV"){
@@ -132,6 +131,7 @@
 
             return $imgFilms[$f];
 
+            echo("hola");
 
         }elseif($type == "TV"){
 
@@ -143,6 +143,45 @@
 
             return $imgTV[$t];
         }
+    }
+
+    function getRecomendUrlFilm($type){
+
+        $filmID1 = "507086";
+
+        $url = "https://api.themoviedb.org/3/movie/507086/recommendations?api_key=cc5aa979863311b5b6af55f2b984df18&language=en-US&page=1";
+
+        $urlImg = "https://image.tmdb.org/t/p/w500";
+
+        try{
+            $json = file_get_contents($url);
+
+            if($json !== false){
+
+                $data = json_decode($json, true);
+
+                $i = 0;
+
+                foreach($data["results"] as $nose){
+
+                    foreach ($data["results"][$i] as $columnName => $columnData) {
+                        //echo $columnData . '<br />';
+
+                        if($columnName == "poster_path") {
+                            echo '<div class="grid-item"> <img loading="lazy" src="' . $urlImg . $columnData . '"> </div>';
+                        }
+
+                        //echo 'Column name: ' . $columnName . ' Column data: ' . $columnData . '<br />';
+                    }
+                    $i++;
+                }
+
+            }
+
+        }catch(Exception $e){
+            echo $e->getMessage();
+        }
+
     }
 
 ?>
