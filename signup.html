@@ -2,13 +2,13 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
-	<title>Login | What to Watch</title>
+	<title>Sign Up | What to Watch</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body id="loginBack" >
 
-    <header>
+    <header class="container">
         <form action="index.php">
             <button type="submit" style="background-color:transparent;border: none;transform:scaleX(-1) translate(-4px, -45px) scale(1.5);position:absolute;"><i class="material-icons" style="color:white;">redo</i></button>
         </form>
@@ -19,8 +19,8 @@
 
     <div id="login" style="color: white;">
 
-        <header style="text-align: center;font-size: 50px;margin-bottom: 50px;height: auto;color: black; margin-top: 30px;">
-            Log In
+        <header style="text-align: center;font-size: 50px;margin-bottom: 50px;height: auto;color: black; margin-top: 30px;margin-bottom: 35px;">
+            Sign Up
         </header>
 
         <form action="assets/include/functions.php" method="POST">
@@ -31,16 +31,26 @@
             </div>
     
             <div style="color: black;text-align: center;">
+                <p style="text-align: center;margin-left: 0%;font-size: 15px;">Email</p>
+                <i class="material-icons" >mail</i>
+                <input placeholder="Introduce tu email" type="email" name="email" style="border: 0;outline: 0;">
+    
+            </div>
+            <div style="color: black;text-align: center;">
                 <p style="text-align: center;margin-left: 0%;font-size: 15px;">Password</p>
                 <i class="material-icons" >lock</i>
-                <input placeholder="Introduce tu contraseña" type="password" name="password" style="border: 0;outline: 0;">
+                <input placeholder="Confirme su contraseña" type="password" name="password" style="border: 0;outline: 0;">
             </div>
-            <button id="butLog" type="submit" name="login" style="color: white; height: 35px;font-size: 20px; cursor: pointer;" >LOG IN</button>
+            <button id="butLog" name="signup" type="submit" style="color: white; height: 35px;font-size: 20px;margin-top: 40px; cursor: pointer;" >SIGN UP</button>
         </form>
 
-        <footer style="color: #0645AD;text-align: center;font-size: 15px;margin-top: 25px;">
-            <a href="signUp.html">Sign Up</a>
-            <p href="">Help</p>
+        <footer style="color: #0645AD;text-align: center;font-size: 15px;margin-top: 30px;">
+
+            <a href="login.html" text-align: right;">Log In </html</a> 
+            <a float: right; > | </a>
+            <a href="" float: right; > Help</a>
+
+
         </footer>
     </div>
 

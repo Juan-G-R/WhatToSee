@@ -6,7 +6,7 @@ let pressed = false;
 let startx;
 let x;
 
-console.log(slider[0]);
+//console.log(slider[0]);
 
 
 for (let i=0; i <= slider.length-1; i++){
