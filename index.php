@@ -107,10 +107,11 @@ require_once('assets/include/functions.php');
         
                     <div class="slider-img-box">
                         <img loading="lazy" class="slider-img" src="<?php echo getImgUrlFiml("FILM");?>">
-                        <img class="slider-img"  src="<?php echo getImgUrlFiml("FILM");?>">
                     </div>
+
+                    <!-- Comentado porque nompe la pagina no se porque todavia -->
         
-                    <div class="slider-img-box">
+                    <!-- <div class="slider-img-box">
                         <img class="slider-img"  src="<?php echo getImgUrlFiml("FILM");?>">
                     </div>
         
@@ -144,7 +145,7 @@ require_once('assets/include/functions.php');
         
                     <div class="slider-img-box">
                         <img class="slider-img" src="<?php echo getImgUrlFiml("FILM");?>">
-                    </div>
+                    </div> -->
 
                     
 
@@ -198,10 +199,12 @@ require_once('assets/include/functions.php');
         
                     <div class="slider-img-box">
                         <img loading=lazy class="slider-img" src="<?php echo getImgUrlFiml("TV");?>">
-                        <img class="slider-img" src="<?php echo getImgUrlFiml("TV");?>">
                     </div>
+
+                    <!-- Comentado porque nompe la pagina no se porque todavia -->
+
         
-                    <div class="slider-img-box">
+                    <!-- <div class="slider-img-box">
                         <img class="slider-img" src="<?php echo getImgUrlFiml("TV");?>">
                     </div>
         
@@ -235,7 +238,7 @@ require_once('assets/include/functions.php');
         
                     <div class="slider-img-box">
                         <img class="slider-img" src="<?php echo getImgUrlFiml("TV");?>">
-                    </div>
+                    </div> -->
         
                 </div>
         

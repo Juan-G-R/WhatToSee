@@ -78,6 +78,8 @@
     $t = -1;
 
     function getImgUrlFiml($type){
+
+        //Solo se pueden pedir 20 peliculas por pagina;
         
         global $f;
         global $t;
