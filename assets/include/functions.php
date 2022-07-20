@@ -1,5 +1,6 @@
 <?php 
 
+    //PRUEBA
     session_start();
     
     if(isset($_REQUEST['login'])){
