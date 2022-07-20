@@ -1,6 +1,5 @@
 <?php 
 
-
     session_start();
     
     if(isset($_REQUEST['login'])){
@@ -79,15 +78,17 @@
 
     function getImgUrlFiml($type){
 
+        $config = include('config.php');
+
         //Solo se pueden pedir 20 peliculas por pagina;
         
         global $f;
         global $t;
 
         if($type == "FILM"){
-            $url = "https://api.themoviedb.org/3/trending/movie/week?api_key=cc5aa979863311b5b6af55f2b984df18";
+            $url = "https://api.themoviedb.org/3/trending/movie/week?api_key=" . $config['TMDB_KEY'];
         }elseif($type == "TV"){
-            $url = "https://api.themoviedb.org/3/trending/tv/week?api_key=cc5aa979863311b5b6af55f2b984df18";
+            $url = "https://api.themoviedb.org/3/trending/tv/week?api_key=" . $config['TMDB_KEY'];
         }
 
         $urlImg = "https://image.tmdb.org/t/p/w500";
@@ -149,9 +150,11 @@
 
     function getRecomendUrlFilm($type){
 
+        $config = include('config.php');
+
         $filmID1 = "507086";
 
-        $url = "https://api.themoviedb.org/3/movie/507086/recommendations?api_key=cc5aa979863311b5b6af55f2b984df18&language=en-US&page=1";
+        $url = "https://api.themoviedb.org/3/movie/507086/recommendations?api_key=" . $config['TMDB_KEY']. "language=en-US&page=1";
 
         $urlImg = "https://image.tmdb.org/t/p/w500";
 

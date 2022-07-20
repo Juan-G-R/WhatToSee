@@ -1,9 +1,12 @@
 <?php 
 
-$dbhost = "localhost";
-$dbuser = "root";
-$dbpass = "1234";
-$db = "whattowatch";
+$config = include('config.php');
+
+
+$dbhost = $configs['dbhost'];
+$dbuser = $configs['dbusername'];
+$dbpass = $configs['dbpass'];
+$db = $configs['db'];
 
 $mysqli = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Error al conectar la BD: %s\n". $conn -> error);
 
