@@ -3,6 +3,9 @@
 
 require_once('assets/include/functions.php');
 
+echo ($_SERVER['HTTP_ACCEPT_LANGUAGE']);
+
+
 ?>
 
 <!DOCTYPE html>

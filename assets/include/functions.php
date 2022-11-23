@@ -1,6 +1,5 @@
 <?php 
 
-    //PRUEBA
     session_start();
     
     if(isset($_REQUEST['login'])){
@@ -155,7 +154,7 @@
 
         $filmID1 = "507086";
 
-        $url = "https://api.themoviedb.org/3/movie/507086/recommendations?api_key=" . $config['TMDB_KEY']. "language=en-US&page=1";
+        $url = "https://api.themoviedb.org/3/movie/507086/recommendations?api_key=" . $config['TMDB_KEY'] . "&language=es-ESPS&page=1";
 
         $urlImg = "https://image.tmdb.org/t/p/w500";
 
