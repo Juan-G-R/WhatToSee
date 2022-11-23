@@ -17,3 +17,10 @@ This is a example of a film recomendation page
 ![2022-11-23_23-04-40](https://user-images.githubusercontent.com/92734840/203654997-6d31cce5-9201-47f4-8cfa-a964582ce383.gif)
 </p>
 
+
+<p align="center">
+  
+ <img width="300" height="300" src="https://user-images.githubusercontent.com/92734840/203654997-6d31cce5-9201-47f4-8cfa-a964582ce383.gif">
+
+</p>
+
