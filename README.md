@@ -10,6 +10,7 @@ This is a example of a film recomendation page
    * [Landing](#Landing)
    * [Sign_Up](#Sign_Up)
    * [Log_In](#Log_In)
+   * [Config](#Config)
 
 # Landing
 <p align="center">
@@ -36,3 +37,9 @@ This is a example of a film recomendation page
 When the user log in, the landing page the Login/Sign_Up header change to the name of the user and a link to got to the profile
   
 </p>
+
+# Config
+The data comes from the TMDB API.
+
+  -Create an account in here https://www.themoviedb.org and get the API Key
+  -Enter assets/include/config.php and put the key ther
