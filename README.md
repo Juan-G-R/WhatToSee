@@ -14,13 +14,10 @@ This is a example of a film recomendation page
 
 ![Captura2](https://user-images.githubusercontent.com/92734840/203653538-9188fc23-50f4-4380-b89e-aea6b221e350.PNG)
 
-![2022-11-23_23-04-40](https://user-images.githubusercontent.com/92734840/203654997-6d31cce5-9201-47f4-8cfa-a964582ce383.gif)
-</p>
-
 
 <p align="center">
   
- <img width="300" height="300" src="https://user-images.githubusercontent.com/92734840/203654997-6d31cce5-9201-47f4-8cfa-a964582ce383.gif">
+ <img src="https://user-images.githubusercontent.com/92734840/203654997-6d31cce5-9201-47f4-8cfa-a964582ce383.gif">
 
 </p>
 
