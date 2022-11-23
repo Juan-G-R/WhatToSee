@@ -8,7 +8,8 @@ This is a example of a film recomendation page
 
 ## Index
    * [Landing](#Landing)
-   * [Sign Up](#Sign Up)
+   * [Sign_Up](#Sign_Up)
+   * [Log_In](#Log_In)
 
 # Landing
 <p align="center">
@@ -22,7 +23,12 @@ This is a example of a film recomendation page
 
 </p>
 
-# Sign Up
+# Sign_Up
 
 ![Captura3](https://user-images.githubusercontent.com/92734840/203655476-2b3561e2-aff8-485e-b423-d0ecf5f2e494.PNG)
 
+# Log_In
+
+![Captura4](https://user-images.githubusercontent.com/92734840/203655636-506856d7-395a-4efa-a1c7-b84c1dfa113f.PNG)
+
+When the user log in, the landing page the Login/Sign_Up header change to the name of the user and a link to got to the profile
