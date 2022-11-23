@@ -7,4 +7,4 @@
 This is a example of a film recomendation page 
 
 ## Index
-   * [Main page](#Main page)
+   * [Main_page](#Main page)
