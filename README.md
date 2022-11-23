@@ -31,4 +31,8 @@ This is a example of a film recomendation page
 
 ![Captura4](https://user-images.githubusercontent.com/92734840/203655636-506856d7-395a-4efa-a1c7-b84c1dfa113f.PNG)
 
+<p align="center">
+
 When the user log in, the landing page the Login/Sign_Up header change to the name of the user and a link to got to the profile
+  
+</p>
