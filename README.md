@@ -7,7 +7,7 @@
 This is a example of a film recomendation page 
 
 ## Index
-   * [Main_page](#Main page)
+   * [Landing](#Landing)
 
-# Main
+# Landing
 ![Captura2](https://user-images.githubusercontent.com/92734840/203653538-9188fc23-50f4-4380-b89e-aea6b221e350.PNG)
