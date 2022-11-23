@@ -8,6 +8,7 @@ This is a example of a film recomendation page
 
 ## Index
    * [Landing](#Landing)
+   * [Sign_Up](#Sign_Up)
 
 # Landing
 <p align="center">
@@ -21,3 +22,4 @@ This is a example of a film recomendation page
 
 </p>
 
+# Sign_Up
