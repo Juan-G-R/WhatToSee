@@ -41,5 +41,5 @@ When the user log in, the landing page the Login/Sign_Up header change to the na
 # Config
 The data comes from the TMDB API.
 
-  -Create an account in here https://www.themoviedb.org and get the API Key
-  -Enter assets/include/config.php and put the key ther
+  -Create an account in here https://www.themoviedb.org and get the API Key.  
+  -Enter assets/include/config.php and put the key ther.
