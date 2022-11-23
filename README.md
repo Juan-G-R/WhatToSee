@@ -1,12 +1,10 @@
-# WhatToSee
-
 <p align="left">
 <img src="https://img.shields.io/badge/STATUS-IN%20DEVELOPMENT-green">
 </p>
 
-# Processing-Sandbox
+# WhatToSee
 
-This is a collection of my processing projects 
+This is a example of a film recomendation page 
 
 ## Index
-   * [Cubes](#Cubes)
+   * [Main page](#Main page)
