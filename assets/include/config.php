@@ -5,7 +5,7 @@ return array(
     'dbusername' => 'root',
     'dbpass' => '1234',
     'db' => 'whattowatch',
-
+    'TMDB_KEY' => '',
 );
 
 ?>
